@@ -1,63 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Calculator Project</title>
     <style>
-        .table{
-            height: 600px;
-            width: 400px;
-            border: solid ;
+        .table-one {
+            height: 85vh;
+            width: 30vw;
+            background-color: #3D3D3D;
+            margin-left: 37%;
+            border-collapse: collapse;
+            border: 3px solid white;
+
         }
-        button{
-            height: 60px;
-            width: 60px;
-            border: solid;
-          
+
+        .box-one {
+            background-color: #080807;
+            text-align: center;
+            font-size: 40px;
+            color: #E8ECD7;
+            margin-left: 100%;
         }
-        input{
-            width: 350px;
-            height: 50px;
-            border: solid;
-            margin-left: 2%;
+
+        .box-two {
+            border: 2px solid white;
+            text-align: center;
+            font-size: 30px;
+            width: 136px;
+
         }
+
+        .box-three {
+            border: 2px solid white;
+            text-align: center;
+            font-size: 30px;
+            width: 136px;
+
+        }
+
+        .box-four {
+            border: 2px solid white;
+            text-align: center;
+            font-size: 30px;
+            width: 136px;
+        }
+
+        .box-five {
+            border: 2px solid white;
+            text-align: center;
+            font-size: 30px;
+            width: 136px;
+        }
+
+        .box-six {
+            border: 2px solid white;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        .box-sevan {
+            border: 2px solid white;
+            text-align: center;
+            font-size: 30px;
+        }.main-container{
+            background-color: black;
+            background-image: url(https://t4.ftcdn.net/jpg/01/27/10/27/360_F_127102793_T3xjCOEUKV5vy3WgNMxpDRnEMSFFHh5b.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+
+       
     </style>
 </head>
-<body>
 
-<table class="table">
-    <tr>
-        <td colspan="4"><input type="text" id="result" disabled></td>
-    </tr>
-    <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td><button>+</button></td>
-    </tr>
-    <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>-</button></td>
-    </tr>
-    <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>*</button></td>
-    </tr>
-    <tr>
-        <td><button>0</button></td>
-        <td><button>.</button></td>
-        <td><button>C</button></td>
-        <td><button>/</button></td>
-    </tr>
-    <tr>
-        <td colspan="4"><button>=</button></td>
-    </tr>
-</table>
+<body class="main-container">
+    <h1 style="color:white; margin-left: 50%;">
+        <caption>Calculator</caption>
+    </h1>
+    <!--calcualtor using table tag  -->
+    <table class="table-one">
+        <tr>
+            <td colspan="4" class="box-one">0</td>
+        </tr>
+
+        <!-- second tr -->
+        <tr>
+            <td class="box-two">AC</td>
+            <td class="box-three">+/-</td>
+            <td class="box-four">%</td>
+            <td style="background-color: aqua;" class="box-five">\</td>
+        </tr>
+
+        <!--third tr -->
+        <tr>
+            <td class="box-six">7</td>
+            <td class="box-six">8</td>
+            <td class="box-six">9</td>
+            <td style="background-color: aqua;" class="box-six">*</td>
+        </tr>
+        <!-- fourth tr -->
+        <tr>
+            <td class="box-six">4</td>
+            <td class="box-six">5</td>
+            <td class="box-six">6</td>
+            <td style="background-color: aqua;" class="box-six">-</td>
+        </tr>
+        <!-- fifth-tr -->
+        <tr>
+            <td class="box-six">1</td>
+            <td class="box-six">2</td>
+            <td class="box-six">3</td>
+            <td style="background-color: aqua;" class="box-six">+</td>
+        </tr>
+        <!-- sixth tr -->
+        <tr>
+            <td class="box-sevan" colspan="2">0</td>
+
+            <td class="box-six">.</td>
+            <td style="background-color: aqua;" class="box-six">=</td>
+        </tr>
+
+    </table>
+
 
 </body>
+
 </html>

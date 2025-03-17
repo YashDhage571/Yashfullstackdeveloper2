@@ -4,20 +4,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title> 
+    <title>WebPage</title>
+    <style>
+        /* Table */
+        table {
+            height: auto;
+            width: 100vw;
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        /* First-row */
+        .first-row {
+            height: auto;
+            width: 90%;
+            background-color: gray;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* First-box */
+        .first-box {
+            height: 100px;
+            width: 10%;
+            border: solid;
+
+        }
+
+        /* second box */
+        .second-row {
+            height: 500px;
+            width: 100%;
+            border: solid;
+            background-color: black;
+            color: white;
+        }
+
+        /* Third-row */
+        .third-row {
+            height: 500px;
+            width: 70%;
+            border: solid;
+
+        }
+
+        /* Fourth-row */
+        .fourth-row {
+            height: 500px;
+            width: 100%;
+            border: solid;
+        }
+
+        /* Fifth-row */
+        .fifth-row {
+            height: 500px;
+            width: 100%;
+            border: solid;
+        }
+
+        /* Project-one */
+        .project-one {
+            height: 300px;
+            width: 150px;
+            border: solid 1px;
+            color: black;
+
+        }
+
+        /* Project-two */
+        .project-two {
+            height: 300px;
+            width: 150px;
+            border: solid 1px;
+
+        }
+
+        /* Project-three */
+        .project-three {
+            height: 300px;
+            width: 150px;
+            border: solid 1px;
+
+        }
+
+        /* Image-area */
+        .img-area {
+            height: 265px;
+            width: 280px;
+            border-radius: 50%;
+            border: solid 1px white;
+            margin-left: 40%;
+        }
+
+        /* Image Area one */
+        .img-area-one {
+            height: 80%;
+            width: 100%;
+        }
+        /* Image Area Two */
+        .img-area-two {
+            height: 80%;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="text-align: center;">My Projects</h1>
-    <hr>
-    <br>
-    <a style="color: black;" href="./class-one.html"><h1>1. Maratha Warriors.</h1></a>
-    <a style="color: black;" href="./class-two.html"><h1>2. Movies.</h1></a>
-    <a style="color: black;" href="./class-four.html"><h1>3. Top-Influencers</h1></a>
-    <a style="color: black;" href="./webpage.html"><h1>4. Web Page</h1></a>
-    <a style="color: black;" href="./score-card.html"><h1>5. Report Card</h1></a>
-    <a style="color: black;" href="./time-table.html"><h1>6. Time Table</h1></a>
-    <a style="color: black;" href="./form-tag.html"><h1>7. Form</h1></a>
+    <!-- Table tag -->
+    <table>
+        <!-- First-row -->
+        <tr class="first-row">
+            <th class="first-box">
+                <a href="#home">
+                    <h2>Home</h2>
+                </a>
+            </th>
+            <th class="first-box">
+                <a href="#about">
+                    <h2>About</h2>
+                </a>
+            </th>
+            <th class="first-box">
+                <a href="#projects">
+                    <h2>Projects</h2>
+                </a>
+            </th>
+            <th class="first-box">
+                <a href="#contact">
+                    <h2>Contacts</h2>
+                </a>
+            </th>
+        </tr>
+        <!-- Second Row -->
+        <tr>
+            <td class="second-row" colspan="4" id="home">
+                <img class="img-area"
+                    src="https://www.creative-tim.com/blog/content/images/2022/01/which-development-job-is-right-for-you.jpg"
+                    alt="">
+                <h1 style="text-align: center;">Yash <span style="color: rgb(0, 255, 255);">Dhage</span></h1>
+                <h3 style="text-align: center;">I am a Fullstack <span style="color: rgb(0, 255, 255);">Developer</span>
+                </h3>
+            </td>
+        </tr>
+        <!-- Third-row -->
+        <tr>
+            <td class="third-row" colspan="4" id="about">
+                <h1 style="color:black;text-align: center;background-color: lemonchiffon;"><u>About</u></h1>
+                <img style="border-radius: 20px;margin-left: 38%;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqe0SkNY3K4ih7vXrSHx4otARmGS_t9KiQvA&s"
+                    alt="" height="270px" width="270px">
+                <h3 style="text-align: center;">
+
+                    Hi! I'm Yash, I'm a Fullstack Developer. I'm passionate about in Ai, and I love connecting
+                    with others who share similar interests. Over the years, I've gained experience in html,css and I
+                    enjoy to Explore More Tecgnologies. introduce the individual as a developer proficient in both
+                    front-end and back-end technologies, capable of building and maintaining entire web applications or
+                    websites, and highlight their skills and experience.
+                </h3>
+            </td>
+        </tr>
+        <!-- Fourth-row -->
+        <tr>
+            <td class="fourth-row" colspan="4" id="projects">
+                <h1 style="text-align: center;background-color: lemonchiffon;">My Projects</h1>
+                <table>
+                    <tr>
+                        <td class="project-one">
+                            <!-- First Image of Project -->
+                            <img class="img-area-one"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh3UQF2mMFwIvKrZ3KU-YtzL2BKEunjy8lEg&s"
+                                alt="">
+                                
+                            <a href="./class-one.html">
+                                <h2 style="color: black;text-align: center;background-color: lemonchiffon;;"><u>Maratha Warriors</u></h2>
+                            </a>
+                        </td>
+                        <td class="project-two">
+                            <!-- Second image Of Projects -->
+                            <img class="img-area-two" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWu6qVwPuZ6BfeEIWCiW0ZGiYZVlHwrBs6yg&s" alt="">
+                            <a href="./class-two.html">
+                                <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Movie</u></h2>
+                            </a>
+                        </td>
+                        <td class="project-three">
+                             <!-- Third image Of Projects -->
+                             <img class="img-area-two" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-X8vgQZQwnqxfA2PjnxtmljC2XUClfxqc8A&s" alt="">
+                             <a href="./class-four.html">
+                                 <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Top Influencers</u></h2>
+                             </a>
+                        </td>
+                        <td class="project-one">
+                             <!-- fourth image Of Projects -->
+                             <img class="img-area-two" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyP5H0b8TpqQYWREyjTna1bEF2viVqflHpWw&s" alt="">
+                             <a href="./score-card.html">
+                                 <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Report Card</u></h2>
+                             </a>
+                        </td>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="project-one">
+                             <!-- fifth image Of Projects -->
+                             <img class="img-area-two" src="https://www.euroschoolindia.com/wp-content/uploads/2023/11/school-calculator-buying-guide-jpg.webp" alt="">
+                             <a href="./calculator.html">
+                                 <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Simple Calculator</u></h2>
+                             </a>
+                        </td>
+                        <td class="project-two">
+                             <!-- Sixth image Of Projects -->
+                             <img class="img-area-two" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdbzLoP1M9CZ4hzmNDMDVS2A6Ol9okz5A1KA&s" alt="">
+                             <a href="./tabl-student-data.html">
+                                 <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Students Data</u></h2>
+                             </a>
+                        </td>
+                        <td class="project-three">
+                             <!-- SEventh image Of Projects -->
+                             <img class="img-area-two" src="https://img.freepik.com/free-vector/modern-online-registration-compositio_23-2147993866.jpg" alt="">
+                             <a href="./form-tag.html">
+                                 <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Form</u></h2>
+                             </a>
+                        </td>
+                        <td class="project-one">
+                            <!-- Eighth image Of Projects -->
+                            <img class="img-area-two" src="https://cdn.vectorstock.com/i/1000v/69/73/yellow-tag-my-name-is-john-doe-vector-45866973.jpg" alt="">
+                            <a href="./assigment.html">
+                                <h2 style="color: black;text-align: center;;background-color: lemonchiffon;"><u>Summary Card</u></h2>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <!-- Fifth-row -->
+       
+    </table>
+
 </body>
 
 </html>
