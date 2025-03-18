@@ -11,6 +11,7 @@
         .table {
             height: auto;
             width: 100%;
+            border-collapse: collapse;
         }
 
         /* First Row CSS */
@@ -99,7 +100,6 @@
         .fifth-row-td-one {
             border-width: 3px;
             border-style: solid;
-            border-color: black;
             width: 100%;
             height: 500px;
         }
@@ -107,6 +107,7 @@
         /* First Table css */
         .first-table {
             width: 100%;
+            border-collapse: collapse;
             height: 500px;
         }
       /* First table td css */
@@ -115,6 +116,7 @@
         .second-table{
             height: 100%;
             width: 100%;
+
         }
         /* Second TAble td */
         .second-table-td{
@@ -125,6 +127,12 @@
         .fourth-row{
             height: 45%;
             width: 15%;
+            border-collapse: collapse;
+        }
+        .table-two{
+            height: 500px;
+            width: 100%;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -165,45 +173,48 @@
             </td>
         </tr>
         <!-- Fourth-ROw -->
-        <tr class="fourth-row">
-            <td colspan="4" class="fourth-row-td-one" id="projects">
-                <table class="first-table">
-                    <!-- First-Row -->
-                     <tr>
-                        <td class="first-table-td">
-                            <!-- Second Table -->
-                             <table class="second-table">
-                                <!-- Seond-Table-First-Row -->
-                                <tr>
-                                   
-                                    <td class="second-table-td"></td>
-                                    <td class="second-table-td"></td>
-                                    <td class="second-table-td"></td>
-                                </tr>
-                                <tr>
-                                    
-                                    <td class="second-table-td"></td>
-                                    <td class="second-table-td"></td>
-                                    <td class="second-table-td"></td>
-                                </tr>
-                                <tr>
-                                   
-                                    <td class="second-table-td"></td>
-                                    <td class="second-table-td"></td>
-                                    <td class="second-table-td"></td>
-                                </tr>
-                             </table>
-                        </td>
-                     </tr>
-                </table>
-            </td>
-        </tr>
+        <table class="table-two" id="projects">
+            <tr class="fourth-row">
+                <td colspan="4" class="fourth-row-td-one" >
+                    <table class="first-table">
+                        <!-- First-Row -->
+                         <tr>
+                            <td class="first-table-td">
+                                <!-- Second Table -->
+                                 <table class="second-table">
+                                    <!-- Seond-Table-First-Row -->
+                                    <tr>
+                                       
+                                        <td class="second-table-td"></td>
+                                        <td class="second-table-td"></td>
+                                        <td class="second-table-td"></td>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td class="second-table-td"></td>
+                                        <td class="second-table-td"></td>
+                                        <td class="second-table-td"></td>
+                                    </tr>
+                                    <tr>
+                                       
+                                        <td class="second-table-td"></td>
+                                        <td class="second-table-td"></td>
+                                        <td class="second-table-td"></td>
+                                    </tr>
+                                 </table>
+                            </td>
+                         </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="fifth-row">
+                <td colspan="4" class="fifth-row-td-one" id="contact"><a href="#contact">
+                        <h1>Contacts</h1>
+                    </a></td>
+            </tr>
+        </table>
         <!--  -->
-        <tr class="fifth-row">
-            <td colspan="4" class="fifth-row-td-one" id="contact"><a href="#contact">
-                    <h1>Contacts</h1>
-                </a></td>
-        </tr>
+        
     </table>
 
 </body>
