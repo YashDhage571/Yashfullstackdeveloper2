@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Assigment</title>
+    <style>
+        /* Body css */
+        body {
+            height: 80vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* main-Container css */
+        .main-container {
+            height: 100%;
+            width: 95%;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            padding: 2%;
+            margin: 0;
+        }
+
+        /* First Row Css */
+        .first-row {
+            height: 10%;
+            width: 100%;
+            background-color: green;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            padding-top: 2%;
+            grid-column: 1/ span 3;
+        }
+
+        /* Second Row */
+        .second-row {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            grid-column: 1/ span 2;
+            border-radius: 5px;
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 25px;
+            text-align: center;
+            padding: 2%;
+        }
+
+        /* Third Row css */
+        .third-row {
+            width: 90%;
+            height: 100%;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+
+        ul {
+            font-size: 25px;
+        }
+
+        /* Fourth Row Css */
+        .fourth-row {
+            width: 97%;
+            height: 60%;
+            background-color: gray;
+            grid-column: 1/ span 3;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First Row  -->
+    <div class="first-row">Breaking News </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Second Row -->
+        <div class="second-row">
+            <h1 style="text-align: center;">Major Events Shakes The World </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur nam voluptas possimus, quia
+                similique adipisci libero delectus quo! Nulla rem, maiores quas modi architecto sequi quam velit. Eos,
+                maxime. <br> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor vel voluptatibus ea dolore aliquid hic
+                animi consectetur maiores quo, iste delectus. Placeat perspiciatis quisquam reprehenderit natus
+                similique eum aspernatur nisi!
+                <br> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, quasi, voluptate ducimus iusto rem cum
+                molestiae similique consequuntur necessitatibus perferendis vel! Nobis, quam? Itaque numquam similique
+                expedita iste. Eveniet, animi?
+            </p>
+        </div>
+        <!-- Third Row -->
+        <div class="third-row">
+            <h2 style="text-align: center;">Related News</h2>
+            <br>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="fourth-row">ⓒ 2023 Company. All rights reserved.</div>
+    </div>
+
+</body>
+
+</html>

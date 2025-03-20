@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Body Css */
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Main-Container-css */
+        .main-container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Box-one css */
+        .box-one {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(31, 112, 138);
+            grid-column: 1 / span 5;
+        }
+
+        /* Box-two css */
+        .box-two {
+            height: 100%;
+            width: 100%;
+            background-color: lightgreen;
+            grid-column: 1 / span 2;
+            grid-row: 2/ span 3;
+        }
+
+        /* Box-three css */
+        .box-three {
+            height: 100%;
+            width: 100%;
+            background-color: lightseagreen;
+            grid-column: 3/ span 3;
+        }
+
+        /* Box-four css */
+        .box-four {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            grid-column: 3/ span 3;
+        }
+
+        /* Box-five css */
+        .box-five {
+            height: 100%;
+            width: 100%;
+            background-color: coral;
+            grid-column: 3/ span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main- Container -->
+    <div class="main-container">
+        <!-- Box One -->
+        <div class="box-one"></div>
+        <!-- Box Two -->
+        <div class="box-two"></div>
+        <!-- Box-three -->
+        <div class="box-three"></div>
+        <!-- Box-four -->
+        <div class="box-four"></div>
+        <!-- Box-Five -->
+        <div class="box-five"></div>
+    </div>
+</body>
+
+</html>
